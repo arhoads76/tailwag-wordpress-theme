@@ -9,20 +9,26 @@
       <!-- Organization Links -->
       <div>
         <h4 class="text-lg font-semibold mb-4">Organization</h4>
-        <ul class="space-y-2">
-          <li><a href="#" class="hover:text-gray-300">About Us</a></li>
-          <li><a href="#" class="hover:text-gray-300">Mission</a></li>
-          <li><a href="#" class="hover:text-gray-300">Contact</a></li>
-        </ul>
+        <?php
+        wp_nav_menu(array(
+            'theme_location' => 'organization',
+            'menu_class' => 'space-y-2',
+            'container' => false,
+            'fallback_cb' => false,
+        ));
+        ?>
       </div>
       <!-- Our Animals Links -->
       <div>
         <h4 class="text-lg font-semibold mb-4">Our Animals</h4>
-        <ul class="space-y-2">
-          <li><a href="#" class="hover:text-gray-300">Dogs</a></li>
-          <li><a href="#" class="hover:text-gray-300">Cats</a></li>
-          <li><a href="#" class="hover:text-gray-300">Adopt</a></li>
-        </ul>
+        <?php
+        wp_nav_menu(array(
+            'theme_location' => 'animals',
+            'menu_class' => 'space-y-2',
+            'container' => false,
+            'fallback_cb' => false,
+        ));
+        ?>
       </div>
       <!-- Social Links -->
       <div>

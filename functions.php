@@ -19,4 +19,6 @@ add_theme_support( 'custom-logo' );
 register_nav_menus( array(
     'primary' => 'Primary Menu',
     'footer' => 'Footer Menu',
+    'organization' => 'Organization Menu',
+    'animals' => 'Our Animals Menu',
 ) );
